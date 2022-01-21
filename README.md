@@ -1,8 +1,9 @@
 ● AWS EMAIL SERVER WITH ONE CLIENT ●
 
 ➤ Create 2 Virtual Machines in the same VPC:
-   ● Server;
-   ● Client;
+   
+    ● Server;
+    ● Client;
    
 ➤ Client 
 

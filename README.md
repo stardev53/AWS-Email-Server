@@ -103,7 +103,25 @@
       > 143
       > 993
       > 995
-      
+
+➤ Certificates (Server)
+
+    ● apt install easy-rsa
+    ● cp -r /usr/share/easy-rsa/ /etc/
+    ● cd /etc/easy-rsa/
+    ● nano openssl-easyrsa.conf
+       > #RANDLIFE
+    ● mv vars.example vars
+    ● nano vars
+       > “ca_only” to “org”
+       > Add your information
+    ● ./easyrsa init-pki
+    ● ./easyrsa build-ca
+    ● ./easyrsa build-server-full azores.pt nopass
+    ● Copy the certificates to 
+       > "/etc/ssl/certs/azores.pt.crt"
+       > "/etc/ssl/private/azores.pt.key"
+
       
 ➤ Client (Thunderbird/Graphic Interface)
 
